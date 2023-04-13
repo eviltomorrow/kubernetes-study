@@ -8,7 +8,8 @@ spec:
     app: kubia
   template:
     metadata:
-      labels:
+      name: kubia
+      lables:
         app: kubia
     spec:
       containers:
