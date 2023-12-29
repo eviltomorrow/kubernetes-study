@@ -5,7 +5,6 @@ metadata:
   labels:
     creation_method: manual
     env: prod
-    app: kubia
 spec:
   containers:
     - image: luksa/kubia
