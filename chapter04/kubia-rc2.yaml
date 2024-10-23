@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: kubia
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     app: kubia
   template:
@@ -16,9 +16,3 @@ spec:
           image: luksa/kubia
           ports:
             - containerPort: 8080
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 8080
-            initialDelaySeconds: 15
-            periodSeconds: 10
